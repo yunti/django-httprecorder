@@ -44,9 +44,6 @@ class ExampleScraper(object):
         }
         return self.http_recorder(url=payment_methods_url, headers=self.headers, method='get', params=params)
        
-    #........   
-    
-    
     def write_address(self, address_list):
         for address in address_list:
             region = self.write_region(address)
