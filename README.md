@@ -1,5 +1,6 @@
 # django-httprecorder
-Records http request responses via django management command in django backend (postgres etc...).
+Records http requests and responses intiated via django management command in django backend (postgres etc...).
+
 Example scraper included with a couple of example end points and example of recording to specific models.
 
 
