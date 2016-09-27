@@ -35,7 +35,7 @@ class ExampleScraper(object):
         return self.http_recorder(url=address_url, headers=self.headers, method='get')
         
     def scrape_supplier_payment_methods(self, supplier, service_type, e7):
-        """Scrapes supplier's available payment methods"
+        """Scrapes supplier's available payment methods"""
         payment_methods_path = '/api/paymentMethods/suppliers/'
         payment_methods_url = self.api_source + payment_methods_path + str(supplier)
         params = {
@@ -43,6 +43,8 @@ class ExampleScraper(object):
             'e7': e7,
         }
         return self.http_recorder(url=payment_methods_url, headers=self.headers, method='get', params=params)
+    
+    #.........
        
     def write_address(self, address_list):
         for address in address_list:
