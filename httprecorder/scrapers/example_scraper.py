@@ -40,7 +40,7 @@ class ExampleScraper(object):
         payment_methods_url = self.api_source + payment_methods_path + str(supplier)
         params = {
             'service': service_type,
-            'e7': e7,
+            'p2': p2,
         }
         return self.http_recorder(url=payment_methods_url, headers=self.headers, method='get', params=params)
     
